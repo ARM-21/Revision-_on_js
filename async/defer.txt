@@ -1,0 +1,26 @@
+Normally, we can load a js script in three ways.
+    -without defer/async keyword
+    -using defer keyword
+    -using async keyword
+1.without defer/async keyword
+    if we don't use any of the keyword/attribute the browser will not treat any specially.it will Normally parse the html/css using available parser.
+    while parsing from top to down it will create a tree using token like(hmtl,head) which is also known as 
+    DOM(Document Object Model).
+    When it arrives at the js file script then it will start fetching the data from that file (which stops the parsing process) and after fetching it will executed the fetched data from js file and after that it will continue parsing the html/css
+
+2.using defer keyword
+    so while using defer keyword in script tag, the browser will treat this line of code differently.
+    while parsing the html/css the js file also starts fetching parallely and after completion of parsing(html/css) then executing js fetched data starts at last (which help the browser loads fastly then the normal rendering)
+    
+
+3.Using async keyword
+    While using async keyword,the browser will treat this line of code differently.
+    while parsing the html/css the js file also starts fetching parallely then executing it will start executing fetched data and after remaining parsing of (html and css) continues (which help the browser loads fastly then the normal rendering)
+
+
+#Usage of async and defer keyword
+ -mainly, we use defer keyword while there are many js file and the files code are dependent to each other.
+ which will help to fetch all js files first and then after fetching and completing the parsing
+ execution of fetched data then starts(defer is faster than async because it loads the all the data first and then executes it at last)
+ -Whereas, we use async when there are many files of js but independent to each other,
+ 
