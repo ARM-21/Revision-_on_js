@@ -42,7 +42,7 @@ valu3
 defaultValue
 
 
-/**SPread operator is used to spread the all values inside an array */
+/**SPread operator is used to spread the all values inside an array or object*/
 
 let hello = [...arr] //elements are spreaded in hello
 hello
@@ -51,3 +51,28 @@ let [justValue,defaultValueee="hell",...spreador] = arr
 justValue
 defaultValueee
 spreador  //gives value inside aa array
+
+// there is an term called aliases/nickname
+
+let aliasesExample = {name:"manoj",roll:12,course:"IT"}
+
+let {name:studentName,...remaining} = aliasesExample;
+// studentName is a aliases for the name (name is not going to work if i try to access it)
+
+
+
+
+
+
+let revise = {
+    "name":"hello",
+    "roll":12,
+    "course":"IT"
+}
+let {name:hari,...rm} = revise
+hari
+rm
+
+// differnce between shallow copy and deep cop
+// shallow copy is just surface copy like key: value copy of object whereas
+// if we want to do deep copy then it will copy key and value where value contains nested object

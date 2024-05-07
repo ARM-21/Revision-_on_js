@@ -68,3 +68,24 @@ console.log(freezer_Not_Working_In_Nested_Object)
 
 
 /** this is a method to check a object is frozen or not isFrozen() */
+
+
+
+// note: Object is mutable 
+/**most imp:- they are addressed by refrence */
+var obj1 = {name:'manoj',age:"20"}
+let shallowCopy = obj1
+shallowCopy.name = 'hello'
+obj1//name is updated in obj1 also
+
+
+// /////// destructuring in nested object is possible
+let obj3 = {name:'manoj',age:"20",course:{name:'it',roll:'heloo'}}
+
+let {name,age} = obj3
+// name
+// roll
+name
+age
+
+
