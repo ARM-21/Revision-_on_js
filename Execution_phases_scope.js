@@ -16,6 +16,20 @@
 //2.Function Execution Context
 
 //1.Global Exeecution context
+
+// There are three propperties in global execution context-****creation phase****
+/**
+ * 1.Variable objects
+ * --->for each functions, a property is created which points to that function
+ * ----> for each varibale, a property is created which is assigned to " undefined"
+ * ---->Arguments objects, are created that were passed into the function
+ * ----> line 1 and 2 is hoisting, hoisting is a mechanism through which all the variable and declarations are moved to the top of their scope before the code execution
+ * 2.Scope chain are created
+ * 
+ * 3.This variable(Where it is referencing)
+ */
+// after this Execution Phase-  current execution context run line by line
+
 //There are two phases in each contexxt:-
 /**1.Creation Phase
  * If there is not any code ,firstly, a global object WINDOW and a global varibale THis is created(window == this)
@@ -24,6 +38,8 @@
  * 2.Exection Phase
  *In this phase, actual value for global variable takes place
  *no functions are executed in this phase(it will be in Function Execution Phase)/
+
+
 
 /**
   * summary
@@ -47,11 +63,14 @@
 // example()
 
 //hoisting ---> raising using ropes and pulleys
-function outer(){
-    let a = 7;
-    inner()
-    function inner(){
-console.log(a)
-    }
-}
-outer()
+// function outer(){
+//     let a = 7;
+//     inner()
+//     function inner(){
+// console.log(a)
+//     }
+// }
+// outer()
+
+
+
