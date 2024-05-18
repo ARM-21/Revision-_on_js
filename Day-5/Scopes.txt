@@ -1,0 +1,27 @@
+
+#Block Scope
+block scope is declared just using curly braces;
+
+{
+
+    
+}
+#local Scope
+function(){
+
+}
+
+Global scope-->whole scope(anonymous)
+
+
+<----------------lexical scope---------->
+lexical scope is sum of all parent scope with respective it only,not children scope but......
+
+function parent(){
+    function child(){
+        function grandchild(){
+        }
+    }
+}
+
+Child scope is parent scope and global scope(not grandchild included)

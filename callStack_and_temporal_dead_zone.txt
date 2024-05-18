@@ -1,0 +1,5 @@
+callstack is a mechanism through which js engine track which line execution context is running currently.
+
+while using let and const also the variable get hoisted,
+but they are not accessible before declaration
+because the variable is placed in TDZ, Temporary Dead Zone peroid--> where variable cannot be accessed before it is initialized.
