@@ -1,0 +1,8 @@
+console.log()
+console.dir()
+console.info()
+console.warn()
+console.error()
+console.table()
+console.time(),timeEnd()
+
