@@ -107,3 +107,9 @@ console.log(typeof instance)//It shows type object to function
 // array destructuring with rest operator       
 
 console.log(22-"22")
+
+let arr = [2,4,"manoj"];
+let [a,b,c] = arr;
+
+let obj = {"name":manoj,age:12,hero:"an"};
+let {name:tan,...rest}= obj;

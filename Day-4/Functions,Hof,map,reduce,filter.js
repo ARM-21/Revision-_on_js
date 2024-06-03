@@ -127,3 +127,26 @@
 // function hello(){
 //     console.log("Hello");
 // }
+debugger
+
+console.log(c);
+function add(a,b){
+
+    return a+b;
+}
+function multiply(a,b){
+    return a*b;}
+
+// closure
+function outer(){
+        let count = 0;
+        function inner(){
+                count++;
+                console.log(count);
+            }
+            return inner;
+        }
+        let innerFunc = outer();
+        innerFunc();
+var c= 20;
+let a =10;
