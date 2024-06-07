@@ -88,12 +88,38 @@ arr[l] = arr[r];
 arr[r] = temp;
 
 }
-quickSorting(arr,0,arr.length -1);
-arr
+// quickSorting(arr,0,arr.length -1);
+// arr
+
 
 
 //count sorting
-function count(){
-
-    
+function countSorting(arr){
+    let max = arr[0];
+for(let i=1;i<arr.length;i++){
+if( max<arr[i]){
+max = arr[i];
 }
+}
+let freqArray = new Array(max+1).fill(0);
+for(let i=0;i<arr.length;i++){
+    freqArray[arr[i]]++;
+}
+let suffixArray = new Array(freqArray.length);
+suffixArray[0] = freqArray[0];
+
+for(let i=1;i<suffixArray.length;i++){
+suffixArray[i] = suffixArray[i-1] + freqArray[i];
+}
+freqArray
+suffixArray
+let sortedArray = new Array(arr.length);
+for(let i=arr.length-1;i>=0;i--){
+sortedArray[suffixArray[arr[i]]-1] = arr[i];
+suffixArray[arr[i]]--;
+
+}
+sortedArray
+}
+countSorting(arr);
+arr
