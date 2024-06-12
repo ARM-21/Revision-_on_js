@@ -44,11 +44,11 @@ function merge(arr,l,mid,r){
 }
 
 
-let arr = [12, 11, 13, 5, 6, 7];
+
 // mergeSorting(arr,0,arr.length-1);
 // console.log(arr);
 // console.log(5/2)
-
+let arr = [12, 11, 13, 5, 6, 7];
 
 function quickSorting(arr,l,r){
 if(l>=r){
@@ -88,8 +88,8 @@ arr[l] = arr[r];
 arr[r] = temp;
 
 }
-// quickSorting(arr,0,arr.length -1);
-// arr
+quickSorting(arr,0,arr.length -1);
+arr
 
 
 
@@ -121,5 +121,23 @@ suffixArray[arr[i]]--;
 }
 sortedArray
 }
-countSorting(arr);
-arr
+// countSorting(arr);
+// console.log(arr)
+
+function binarySearch(arr,st,en,tr){
+let mid = Math.floor(st + (en-st)/2);
+while(st <= en){
+if(tr == arr[mid]) return arr[mid];
+else if(tr < arr[mid]) {
+    en = mid-1;
+    mid = Math.floor(st + (en-st)/2);
+}
+else if(tr>arr[mid]){
+    st = mid+1;
+    mid = Math.floor(st + (en-st)/2);
+}
+
+}
+
+}
+console.log(binarySearch(arr,0,arr.length-1,5));

@@ -85,7 +85,7 @@ let obj3 = {name:'manoj',age:"20",course:{name:'it',roll:'heloo'}}
 let {name,age} = obj3
 // name
 // roll
-name
+// name
 age
 
 

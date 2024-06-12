@@ -150,3 +150,44 @@ function outer(){
         innerFunc();
 var c= 20;
 let a =10;
+
+
+
+
+
+
+
+let arr= [
+    {
+name:"manoj",
+age:19
+
+},
+{
+    name:"hari",
+    age:20
+},
+{
+    name:"manoji",
+    age:21
+}
+,
+{
+    name:"an",
+    age:15
+}
+]
+
+const updated = arr.filter((student)=>{
+return student.age>18
+}).map((student)=>{
+    return student.name;
+})
+
+console.log(updated);
+
+let numArr = [1,2,3,4,5,6];
+const reduceArray = numArr.reduce((a,b)=>{
+return a+b;
+},5)
+reduceArray
