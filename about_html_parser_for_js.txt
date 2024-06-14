@@ -1,0 +1,6 @@
+
+Html parser
+there is a component called HTML parser in browser,
+which is responsible for parsing HTML code into a DOM tree.
+
+each element is created as a <------object-----> and as a properties in memory by parser that's why we can access each element.
