@@ -3,4 +3,8 @@
 /**
  * element.value---->alternative
  * element.value = ""value.....--->alternative
+ * 
+ * but generally we will use classList.add('value') ----> to add attribute
+ * 
+ * 
  */
