@@ -1,0 +1,37 @@
+
+body > h1{
+    color: aqua;
+background-color: rgb(170, 135, 135);
+text-align: center;
+}
+.card{
+    background-color: pink;
+    display: inline;
+    height: 120px;
+    width: 80px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.add-cart-btn{
+background-color: rgb(172, 134, 77);
+display: inline-block;
+position: absolute;
+top:50%;
+right: 10%;
+border-radius: 50%;
+width: 100px;
+text-align: center;
+cursor: pointer;
+}
+.container{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
