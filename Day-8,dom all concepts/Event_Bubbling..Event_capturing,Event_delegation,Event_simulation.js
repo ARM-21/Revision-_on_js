@@ -43,3 +43,13 @@
 // 3. Event Bubbling is the default behavior of the events in the DOM.
 // 4. Event Capturing is the opposite of Event Bubbling.
 
+const green_box = document.querySelector('.green-box');
+const blue_box = document.querySelector('.blue-box');
+const pink_box = document.querySelector('.pink-box');
+
+green_box.addEventListener('click',()=>{
+    console.log('green box clicked');
+})
+pink_box.addEventListener('click',()=>{
+    console.log('pink box clicked');
+})
